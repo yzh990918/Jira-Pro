@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 
 import './styles/main.css'
+import '@unocss/reset/normalize.css'
 import 'uno.css'
 import 'antd/dist/antd.less'
 import { AppProviders } from '@/context'
