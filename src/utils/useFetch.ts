@@ -28,7 +28,7 @@ export const useFetch = async (url: string, { data, token, ...customConfig }: Fe
 
   // 处理 data
   if (config.method?.toUpperCase() === 'GET')
-    url += `?${qs.stringify(data)}`
+    url += `${qs.stringify(data) ? '?' : ''}${qs.stringify(data)}`
   else
     config.body = `${qs.stringify(data || {})}`
 

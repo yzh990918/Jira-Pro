@@ -3,7 +3,7 @@ import type { User, UserParams } from '@/types'
 
 // getToken
 export const getToken = () => {
-  window.localStorage.getItem(JIRA_KEY)
+  return window.localStorage.getItem(JIRA_KEY) || ''
 }
 
 // handleUserResponse
