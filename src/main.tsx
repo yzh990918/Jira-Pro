@@ -4,6 +4,7 @@ import App from './App'
 
 import './styles/main.css'
 import 'uno.css'
+import 'antd/dist/antd.less'
 import { AppProviders } from '@/context'
 
 ReactDOM.render(

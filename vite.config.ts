@@ -22,14 +22,22 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: [
-        'react',
-        'react-router-dom',
-        { 'usehooks-ts': ['useCounter', 'useDarkMode'] },
-      ],
+      imports: ['react', 'react-router-dom', { 'usehooks-ts': ['useCounter', 'useDarkMode'] }],
       dts: true,
     }),
   ],
+
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        modifyVars: {
+          'primary-color': 'rgb(0, 82, 204)',
+          'font-size-base': '16px',
+        },
+      },
+    },
+  },
 
   // https://github.com/vitest-dev/vitest
   test: {
