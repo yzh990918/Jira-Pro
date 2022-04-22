@@ -22,7 +22,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: ['react', 'react-router-dom', { 'usehooks-ts': ['useCounter', 'useDarkMode'] }],
+      imports: ['react', 'react-router-dom'],
       dts: true,
     }),
   ],

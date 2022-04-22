@@ -1,3 +1,4 @@
+import styled from '@emotion/styled'
 import { List } from './list'
 import { SearchPanel } from './search-panel'
 import { useDebounce, useMount } from '@/hooks'
@@ -24,10 +25,14 @@ export const ProjectListScreen = () => {
     client('users').then(setUsers)
   })
 
+  const Container = styled.div`
+    padding: 3.2rem;
+  `
   return (
-    <div>
+    <Container>
+      <h1 style={{ textAlign: 'left' }}>项目列表</h1>
       <SearchPanel users={users} param={param} setParam={setParam} />
       <List users={users} list={list} />
-    </div>
+    </Container>
   )
 }
