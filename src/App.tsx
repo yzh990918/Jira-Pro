@@ -5,5 +5,5 @@ import { UnAuthApp } from './pages/unAuth'
 export default function App() {
   const { user } = useAuth()
 
-  return (<div text="sm blue-300" className="text-center">{ user ? <AuthApp/> : <UnAuthApp /> }</div>)
+  return (<div className="text-center">{ user ? <AuthApp/> : <UnAuthApp /> }</div>)
 }

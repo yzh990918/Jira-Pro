@@ -4,6 +4,9 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  /** 换成62.5 方便换算单位 200px === 20rem */
+  font-size: 62.5%;
+  min-height: 100vh;
 }
 
 html.dark {
